@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+      name="description"
+      content="Book IT support from Ke'Stone: tell us the type of issue, how urgent it is and how you'd like to be contacted."
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+
+    <body data-root="../" data-page="enquiry">
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <div data-include="header"></div>
+
+    <main id="main">
+      <section class="hero">
+        <div class="container">
+          <p class="eyebrow">Request support</p>
+          <h1>Book a repair, setup or support session</h1>
+          <p class="lead">
+            Fill in the form below and we'll be in touch — usually within 24 hours — with next steps
+            and an honest estimate. Fields marked with * are required.
+          </p>
+        </div>
+      </section>
+
+      <section class="section section-grey">
+        <div class="container">
+          <!-- Booking form: validated client-side in assets/js/script.js -->
+          <form class="form-card" data-validate novalidate>
+            <div class="form-grid">
+              <div class="field">
+                <label for="fullName">Full Name*</label>
+                <input type="text" id="fullName" name="fullName" autocomplete="name" required />
+                <p class="error-msg" aria-live="polite"></p>
+              </div>
+
+              <div class="field">
+                <label for="email">Email*</label>
+                <input type="email" id="email" name="email" autocomplete="email" required />
+                <p class="error-msg" aria-live="polite"></p>
+              </div>
+
+              <div class="field">
+                <label for="phone">Phone*</label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel" required />
+                <p class="error-msg" aria-live="polite"></p>
+              </div>
+
+              <div class="field">
+                <label for="issueType">Type of Issue*</label>
+                <select id="issueType" name="issueType" required>
+                  <option value="">Please select…</option>
+                  <option value="repair">PC / Laptop repair</option>
+                  <option value="network">Network setup</option>
+                  <option value="security">Cybersecurity</option>
+                  <option value="remote">Remote support</option>
+                  <option value="maintenance">Maintenance plan</option>
+                  <option value="other">Other</option>
+                </select>
+                <p class="error-msg" aria-live="polite"></p>
+              </div>
+
+              <div class="field">
+                <label for="urgency">Urgency*</label>
+                <select id="urgency" name="urgency" required>
+                  <option value="">Please select…</option>
+                  <option value="urgent">Urgent — today if possible</option>
+                  <option value="week">Sometime this week</option>
+                  <option value="flexible">Flexible</option>
+                </select>
+                <p class="error-msg" aria-live="polite"></p>
+              </div>
+
+              <div class="field">
+                <label for="contactMethod">Preferred Contact Method</label>
+                <select id="contactMethod" name="contactMethod">
+                  <option value="email">Email</option>
+                  <option value="phone">Phone call</option>
+                  <option value="whatsapp">WhatsApp</option>
+                </select>
+                <p class="error-msg" aria-live="polite"></p>
+              </div>
+
+              <div class="field field-full">
+                <label for="details">Describe the Issue*</label>
+                <textarea
+                  id="details"
+                  name="details"
+                  placeholder="What device is affected, what happens, and when it started."
+                  required
+                ></textarea>
+                <p class="error-msg" aria-live="polite"></p>
+              </div>
+            </div>
+
+            <p class="error-msg" data-form-summary aria-live="polite"></p>
+
+            <button class="btn btn-accent" type="submit">Send request</button>
+            <p class="form-note" style="margin-top: 1rem">
+              This is a demo site with no backend — your details are validated in the browser only
+              and are not stored or transmitted anywhere.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <div data-include="footer"></div>
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>
