@@ -1,11 +1,151 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact Ke'Stone IT Support | Sandton &amp; Randburg</title>
+    <meta
+      name="description"
+      content="Call, email or visit Ke'Stone IT Support. Sandton office and Randburg drop-off point, business hours and a quick contact form."
+    />
+
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+
+  <body data-root="../" data-page="contact">
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <div data-include="header"></div>
+
+    <main id="main">
+      <section class="hero">
+        <div class="container">
+          <p class="eyebrow">Contact</p>
+          <h1>Talk to a real person</h1>
+          <p class="lead">
+            Phone, email or drop your device off in person. If it's after hours, send the form and
+            we'll reply first thing on the next working day.
+          </p>
+        </div>
+      </section>
+
+      <!-- Contact detail cards -->
+      <section class="section">
+        <div class="container">
+          <div class="grid grid-3">
+            <article class="card">
+              <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5c0-1 1-2 2-2h2l2 5-2 1a10 10 0 0 0 5 5l1-2 5 2v2c0 1-1 2-2 2A16 16 0 0 1 4 5z"/></svg></div>
+              <h3>Phone</h3>
+              <p><a href="tel:+27110000000">+27 11 000 0000</a></p>
+              <p><a href="https://wa.me/27110000000" rel="noopener">WhatsApp us</a></p>
+            </article>
+
+            <article class="card">
+              <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></div>
+              <h3>Email</h3>
+              <p><a href="mailto:hello@kestone-it.co.za">hello@kestone-it.co.za</a></p>
+              <p>We reply to every message within one working day.</p>
+            </article>
+
+            <article class="card">
+              <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+              <h3>Business hours</h3>
+              <p>Monday – Friday: 08:00 – 17:30</p>
+              <p>Saturday: 09:00 – 13:00 · Sunday &amp; public holidays: closed</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Locations with embedded Google Maps (no API key required) -->
+      <section class="section section-grey">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Find us</p>
+            <h2>Two places to reach us</h2>
+          </div>
+
+          <div class="grid grid-2">
+            <article class="card">
+              <h3>Sandton Office</h3>
+              <p>12 Rivonia Road, Sandton, Johannesburg, 2196</p>
+              <iframe
+                class="map-frame"
+                src="https://www.google.com/maps?q=Rivonia+Road+Sandton+Johannesburg&output=embed"
+                title="Map showing the Ke'Stone IT Support Sandton office"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </article>
+
+            <article class="card">
+              <h3>Randburg Drop-off Point</h3>
+              <p>45 Republic Road, Randburg, Johannesburg, 2194</p>
+              <iframe
+                class="map-frame"
+                src="https://www.google.com/maps?q=Republic+Road+Randburg+Johannesburg&output=embed"
+                title="Map showing the Ke'Stone IT Support Randburg drop-off point"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Simple contact form -->
+      <section class="section">
+        <div class="container narrow">
+          <div class="section-head">
+            <p class="eyebrow">Send a message</p>
+            <h2>Quick question? Ask away</h2>
+          </div>
+
+          <form class="form-card" data-validate novalidate>
+            <div class="form-grid">
+              <div class="field">
+                <label for="contactName">Full Name*</label>
+                <input
+                  type="text"
+                  id="contactName"
+                  name="contactName"
+                  autocomplete="name"
+                  required
+                />
+                <p class="error-msg" aria-live="polite"></p>
+              </div>
+
+              <div class="field">
+                <label for="contactEmail">Email*</label>
+                <input
+                  type="email"
+                  id="contactEmail"
+                  name="contactEmail"
+                  autocomplete="email"
+                  required
+                />
+                <p class="error-msg" aria-live="polite"></p>
+              </div>
+
+              <div class="field field-full">
+                <label for="message">Message*</label>
+                <textarea id="message" name="message" required></textarea>
+                <p class="error-msg" aria-live="polite"></p>
+              </div>
+            </div>
+
+            <p class="error-msg" data-form-summary aria-live="polite"></p>
+
+            <button class="btn btn-accent" type="submit">Send message</button>
+            <p class="form-note" style="margin-top: 1rem">
+              Need a booking instead? Use the
+              <a href="enquiry.html">support request form</a>.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <div data-include="footer"></div>
+    <script src="../assets/js/script.js"></script>
+  </body>
 </html>
