@@ -12,7 +12,42 @@
 
     <body data-root="../" data-page="enquiry">
     <a class="skip-link" href="#main">Skip to main content</a>
-    <div data-include="header"></div>
+    <header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="{{root}}index.html" aria-label="Ke'Stone IT Support home">
+      <span class="logo-mark" aria-hidden="true">K</span>
+      <span class="logo-text">Ke'Stone <em>IT Support</em></span>
+    </a>
+
+    <!-- Mobile hamburger toggle (behaviour in assets/js/script.js) -->
+    <button
+      class="nav-toggle"
+      id="navToggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="primaryNav"
+      aria-label="Toggle navigation menu"
+    >
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+
+    <nav class="primary-nav" id="primaryNav" aria-label="Primary">
+      <ul>
+        <li><a href="{{root}}index.html" data-nav="home">Home</a></li>
+        <li><a href="{{root}}pages/about.html" data-nav="about">About Us</a></li>
+        <li><a href="{{root}}pages/services.html" data-nav="services">Services</a></li>
+        <li><a href="{{root}}pages/contact.html" data-nav="contact">Contact</a></li>
+        <li>
+          <a class="btn btn-accent btn-sm" href="{{root}}pages/enquiry.html" data-nav="enquiry"
+            >Request Support</a
+          >
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
     <main id="main">
       <section class="hero">
