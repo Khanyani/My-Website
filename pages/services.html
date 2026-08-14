@@ -1,184 +1,553 @@
 <!doctype html>
+<!-- Defines this as an HTML5 document -->
+
 <html lang="en">
+  <!-- Sets the page language to English -->
+
   <head>
+    <!-- Page metadata and external resources -->
+
     <meta charset="utf-8" />
+    <!-- Supports standard characters -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Makes the page responsive on mobile devices -->
+
     <title>IT Support Services &amp; Pricing | Ke'Stone IT Support</title>
+    <!-- Title displayed in the browser tab -->
+
     <meta
       name="description"
       content="Repairs, network setup, cybersecurity basics, remote support and maintenance plans — with indicative starting prices for each service."
     />
+    <!-- Short description used by search engines -->
 
     <link rel="stylesheet" href="../assets/css/style.css" />
-    
+    <!-- Loads the website's CSS file -->
+
   </head>
 
+
   <body data-root="../" data-page="services">
+    <!-- Main page content; identifies this as the Services page -->
+
     <a class="skip-link" href="#main">Skip to main content</a>
+    <!-- Accessibility link that skips the navigation -->
+
+
+    <!-- ================= HEADER ================= -->
+
     <header class="site-header">
-  <div class="container header-inner">
-    <a class="logo" href="../index.html" aria-label="Ke'Stone IT Support home">
-      <span class="logo-mark" aria-hidden="true">K</span>
-      <span class="logo-text">Ke'Stone <em>IT Support</em></span>
-    </a>
+      <!-- Website header and navigation -->
 
-    <!-- Mobile hamburger toggle (behaviour in assets/js/script.js) -->
-    <button
-      class="nav-toggle"
-      id="navToggle"
-      type="button"
-      aria-expanded="false"
-      aria-controls="primaryNav"
-      aria-label="Toggle navigation menu"
-    >
-      <span class="nav-toggle-bar"></span>
-      <span class="nav-toggle-bar"></span>
-      <span class="nav-toggle-bar"></span>
-    </button>
+      <div class="container header-inner">
+        <!-- Organizes and centers header content -->
 
-    <nav class="primary-nav" id="primaryNav" aria-label="Primary">
-      <ul>
-        <li><a href="../index.html" data-nav="home">Home</a></li>
-        <li><a href="about.html" data-nav="about">About Us</a></li>
-        <li><a href="services.html" data-nav="services">Services</a></li>
-        <li><a href="contact.html" data-nav="contact">Contact</a></li>
-        <li>
-          <a class="btn btn-accent btn-sm" href="enquiry.html" data-nav="enquiry"
-            >Request Support</a
-          >
-        </li>
-      </ul>
-    </nav>
-  </div>
-</header>
+
+        <!-- Website logo -->
+
+        <a
+          class="logo"
+          href="../index.html"
+          aria-label="Ke'Stone IT Support home"
+        >
+          <!-- Logo links back to the homepage -->
+
+          <span class="logo-mark" aria-hidden="true">K</span>
+          <!-- Decorative K logo -->
+
+          <span class="logo-text">
+            Ke'Stone <em>IT Support</em>
+          </span>
+          <!-- Company name -->
+
+        </a>
+
+
+        <!-- Mobile navigation button -->
+
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primaryNav"
+          aria-label="Toggle navigation menu"
+        >
+          <!-- Opens and closes the mobile navigation -->
+
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <!-- Three bars create the hamburger icon -->
+
+        </button>
+
+
+        <!-- Main navigation -->
+
+        <nav class="primary-nav" id="primaryNav" aria-label="Primary">
+          <!-- Main website navigation -->
+
+          <ul>
+
+            <li>
+              <a href="../index.html" data-nav="home">Home</a>
+            </li>
+            <!-- Home page link -->
+
+            <li>
+              <a href="about.html" data-nav="about">About Us</a>
+            </li>
+            <!-- About page link -->
+
+            <li>
+              <a href="services.html" data-nav="services">Services</a>
+            </li>
+            <!-- Services page link -->
+
+            <li>
+              <a href="contact.html" data-nav="contact">Contact</a>
+            </li>
+            <!-- Contact page link -->
+
+            <li>
+              <a
+                class="btn btn-accent btn-sm"
+                href="enquiry.html"
+                data-nav="enquiry"
+              >
+                Request Support
+              </a>
+              <!-- Main navigation call-to-action -->
+
+            </li>
+
+          </ul>
+        </nav>
+
+      </div>
+    </header>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
 
     <main id="main">
+      <!-- Contains the main Services page content -->
+
+
+      <!-- ================= HERO SECTION ================= -->
+
       <section class="hero">
+        <!-- Introduction to the Services page -->
+
         <div class="container">
+
           <p class="eyebrow">Services</p>
+          <!-- Small section label -->
+
           <h1>Clear services, clear starting prices</h1>
+          <!-- Main page heading -->
+
           <p class="lead">
             Five ways we keep your technology working. Choose a once-off fix or an ongoing plan —
             either way you'll get an upfront estimate before we begin.
           </p>
+          <!-- Introduction to the available services -->
+
         </div>
       </section>
 
-      <!-- Service cards with indicative starting prices -->
+
+      <!-- ================= SERVICE CARDS ================= -->
+
       <section class="section">
+        <!-- Displays the available IT services -->
+
         <div class="container">
+
           <div class="grid grid-3">
+            <!-- Creates a three-column service grid -->
+
+
+            <!-- PC and Laptop Repair -->
+
             <article class="card">
-              <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M2 20h20"/></svg></div>
+              <!-- Individual service card -->
+
+              <div class="card-icon" aria-hidden="true">
+                <!-- Laptop icon -->
+
+                <svg
+                  viewBox="0 0 24 24"
+                  width="22"
+                  height="22"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="3" y="4" width="18" height="12" rx="2"/>
+                  <path d="M2 20h20"/>
+                </svg>
+
+              </div>
+
               <h3>PC &amp; Laptop Repair</h3>
+              <!-- Service name -->
+
               <p>
                 Diagnostics, virus and malware removal, operating system reinstalls, screen and
                 keyboard replacements, SSD upgrades and data recovery attempts.
               </p>
-              <p class="price">From R450 <span>per device, after diagnosis</span></p>
+              <!-- Service description -->
+
+              <p class="price">
+                From R450 <span>per device, after diagnosis</span>
+              </p>
+              <!-- Starting service price -->
+
             </article>
 
+
+            <!-- Network Setup -->
+
             <article class="card">
-              <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 12v9"/><path d="M8.5 8.5a5 5 0 0 1 7 0"/><path d="M5 5a9 9 0 0 1 14 0"/><circle cx="12" cy="12" r="1"/></svg></div>
+
+              <div class="card-icon" aria-hidden="true">
+                <!-- Wi-Fi icon -->
+
+                <svg
+                  viewBox="0 0 24 24"
+                  width="22"
+                  height="22"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M12 12v9"/>
+                  <path d="M8.5 8.5a5 5 0 0 1 7 0"/>
+                  <path d="M5 5a9 9 0 0 1 14 0"/>
+                  <circle cx="12" cy="12" r="1"/>
+                </svg>
+
+              </div>
+
               <h3>Network Setup</h3>
+              <!-- Service name -->
+
               <p>
                 Router and Wi-Fi configuration, mesh and range extension, cabling for small offices,
                 printer sharing, guest networks and speed troubleshooting.
               </p>
-              <p class="price">From R700 <span>per site setup</span></p>
+              <!-- Service description -->
+
+              <p class="price">
+                From R700 <span>per site setup</span>
+              </p>
+              <!-- Starting service price -->
+
             </article>
 
+
+            <!-- Cybersecurity -->
+
             <article class="card">
-              <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></div>
+
+              <div class="card-icon" aria-hidden="true">
+                <!-- Security lock icon -->
+
+                <svg
+                  viewBox="0 0 24 24"
+                  width="22"
+                  height="22"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="4" y="10" width="16" height="11" rx="2"/>
+                  <path d="M8 10V7a4 4 0 0 1 8 0v3"/>
+                </svg>
+
+              </div>
+
               <h3>Cybersecurity Basics</h3>
+              <!-- Service name -->
+
               <p>
                 Antivirus rollout, password manager setup, two-factor authentication, automated
                 backups and a short staff or family awareness walkthrough.
               </p>
-              <p class="price">From R600 <span>per assessment &amp; setup</span></p>
+              <!-- Service description -->
+
+              <p class="price">
+                From R600 <span>per assessment &amp; setup</span>
+              </p>
+              <!-- Starting service price -->
+
             </article>
 
+
+            <!-- Remote Support -->
+
             <article class="card">
-              <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18"/></svg></div>
+
+              <div class="card-icon" aria-hidden="true">
+                <!-- Globe icon -->
+
+                <svg
+                  viewBox="0 0 24 24"
+                  width="22"
+                  height="22"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="12" cy="12" r="9"/>
+                  <path d="M3 12h18"/>
+                  <path d="M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18"/>
+                </svg>
+
+              </div>
+
               <h3>Remote Support</h3>
+              <!-- Service name -->
+
               <p>
                 Secure, permission-based remote sessions for software errors, email and printer
                 problems, updates and quick configuration changes.
               </p>
-              <p class="price">From R250 <span>per 30-minute session</span></p>
+              <!-- Service description -->
+
+              <p class="price">
+                From R250 <span>per 30-minute session</span>
+              </p>
+              <!-- Starting service price -->
+
             </article>
 
+
+            <!-- Maintenance Plans -->
+
             <article class="card">
-              <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 3.5a5 5 0 0 0 6 6L9 21H4v-5z"/></svg></div>
+
+              <div class="card-icon" aria-hidden="true">
+                <!-- Maintenance/tool icon -->
+
+                <svg
+                  viewBox="0 0 24 24"
+                  width="22"
+                  height="22"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M14.5 3.5a5 5 0 0 0 6 6L9 21H4v-5z"/>
+                </svg>
+
+              </div>
+
               <h3>Ongoing Maintenance Plans</h3>
+              <!-- Service name -->
+
               <p>
                 Monthly check-ups, update management, backup monitoring and priority response — so
                 small problems get caught before they stop your work.
               </p>
-              <p class="price">From R900 <span>per month, up to 5 devices</span></p>
+              <!-- Service description -->
+
+              <p class="price">
+                From R900 <span>per month, up to 5 devices</span>
+              </p>
+              <!-- Starting service price -->
+
             </article>
+
           </div>
+
+
+          <!-- Pricing disclaimer -->
 
           <p class="form-note" style="margin-top: 2rem">
             Please note: all prices shown are indicative starting rates. Final quotes depend on
             parts, travel and how long the job takes, and are always confirmed with you before any
             work begins.
           </p>
+          <!-- Explains that prices are estimates and may change -->
+
         </div>
       </section>
+
+
+      <!-- ================= CALL TO ACTION ================= -->
 
       <section class="section section-navy">
+        <!-- Final support call-to-action -->
+
         <div class="container cta-band">
+
           <h2>Not sure which service you need?</h2>
-          <p>Describe the problem and we'll recommend the right option — no obligation.</p>
-          <a class="btn btn-accent" href="enquiry.html">Request Support</a>
+          <!-- CTA heading -->
+
+          <p>
+            Describe the problem and we'll recommend the right option — no obligation.
+          </p>
+          <!-- CTA description -->
+
+          <a class="btn btn-accent" href="enquiry.html">
+            Request Support
+          </a>
+          <!-- Opens the support enquiry page -->
+
         </div>
       </section>
+
     </main>
 
-    
+
+    <!-- ================= FOOTER ================= -->
+
     <footer class="site-footer">
+      <!-- Website footer -->
+
       <div class="container footer-grid">
+        <!-- Organizes footer content into columns -->
+
+
+        <!-- Company information -->
+
         <div>
+
           <h2 class="footer-heading">Ke'Stone IT Support</h2>
+
           <p class="footer-text">
             Friendly, affordable IT support for small businesses and home users across Johannesburg.
           </p>
+
         </div>
 
+
+        <!-- Contact information -->
+
         <div>
+
           <h2 class="footer-heading">Contact</h2>
+
           <ul class="footer-list">
-            <li><a href="tel:+27110000000">+27 11 000 0000</a></li>
-            <li><a href="mailto:hello@kestone-it.co.za">hello@kestone-it.co.za</a></li>
-            <li>Mon–Fri: 08:00–17:30 · Sat: 09:00–13:00</li>
+
+            <li>
+              <a href="tel:+27110000000">+27 11 000 0000</a>
+            </li>
+            <!-- Phone link -->
+
+            <li>
+              <a href="mailto:hello@kestone-it.co.za">
+                hello@kestone-it.co.za
+              </a>
+            </li>
+            <!-- Email link -->
+
+            <li>
+              Mon–Fri: 08:00–17:30 · Sat: 09:00–13:00
+            </li>
+            <!-- Business hours -->
+
           </ul>
+
         </div>
 
+
+        <!-- Quick links -->
+
         <div>
+
           <h2 class="footer-heading">Quick links</h2>
+
           <ul class="footer-list">
-            <li><a href="services.html">Services</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="enquiry.html">Request Support</a></li>
+
+            <li>
+              <a href="services.html">Services</a>
+            </li>
+
+            <li>
+              <a href="about.html">About Us</a>
+            </li>
+
+            <li>
+              <a href="enquiry.html">Request Support</a>
+            </li>
+
           </ul>
+
         </div>
 
+
+        <!-- Social media links -->
+
         <div>
+
           <h2 class="footer-heading">Follow us</h2>
+
           <ul class="footer-list footer-social">
-            <li><a href="https://www.facebook.com/" rel="noopener">Facebook</a></li>
-            <li><a href="https://www.linkedin.com/" rel="noopener">LinkedIn</a></li>
-            <li><a href="https://wa.me/27110000000" rel="noopener">WhatsApp</a></li>
+
+            <li>
+              <a href="https://www.facebook.com/" rel="noopener">
+                Facebook
+              </a>
+            </li>
+            <!-- Facebook link -->
+
+            <li>
+              <a href="https://www.linkedin.com/" rel="noopener">
+                LinkedIn
+              </a>
+            </li>
+            <!-- LinkedIn link -->
+
+            <li>
+              <a href="https://wa.me/27110000000" rel="noopener">
+                WhatsApp
+              </a>
+            </li>
+            <!-- WhatsApp link -->
+
           </ul>
+
         </div>
+
       </div>
+
+
+      <!-- Copyright -->
 
       <div class="footer-bottom">
-        <p>&copy; <span data-year>2026</span> Ke'Stone IT Support. All rights reserved.</p>
+
+        <p>
+          &copy;
+          <span data-year>2026</span>
+          Ke'Stone IT Support. All rights reserved.
+        </p>
+        <!-- JavaScript can update the year automatically -->
+
       </div>
+
     </footer>
 
+
+    <!-- ================= JAVASCRIPT ================= -->
+
     <script src="../assets/js/script.js"></script>
+    <!-- Loads JavaScript for interactive website features -->
+
   </body>
 </html>
+<!-- End of the HTML document -->
