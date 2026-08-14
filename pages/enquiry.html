@@ -1,188 +1,529 @@
 <!DOCTYPE html>
+<!-- Defines this as an HTML5 document -->
+
 <html lang="en">
+<!-- Sets the page language to English -->
+
 <head>
+  <!-- Page metadata and external resources -->
+
   <meta charset="UTF-8">
+  <!-- Supports standard characters -->
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Makes the page responsive on mobile devices -->
+
   <title>Document</title>
+  <!-- Text displayed in the browser tab -->
+
   <link rel="stylesheet" href="../assets/css/style.css" />
+  <!-- Loads the website's CSS file -->
+
 </head>
-    
-    <body data-root="../" data-page="enquiry">
-    <a class="skip-link" href="#main">Skip to main content</a>
-    <header class="site-header">
-        <div class="container header-inner">
-            <a class="logo" href="../index.html" aria-label="Ke'Stone IT Support home">
-            <span class="logo-mark" aria-hidden="true">K</span>
-            <span class="logo-text">Ke'Stone <em>IT Support</em></span>
-            </a>
 
-            <!-- Mobile hamburger toggle (behaviour in assets/js/script.js) -->
-            <button
-            class="nav-toggle"
-            id="navToggle"
-            type="button"
-            aria-expanded="false"
-            aria-controls="primaryNav"
-            aria-label="Toggle navigation menu"
+
+<body data-root="../" data-page="enquiry">
+  <!-- Main page content; identifies this as the enquiry page -->
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <!-- Accessibility link that skips the navigation -->
+
+
+  <!-- ================= HEADER ================= -->
+
+  <header class="site-header">
+    <!-- Website header and navigation -->
+
+    <div class="container header-inner">
+      <!-- Organizes and centers header content -->
+
+
+      <!-- Website logo -->
+
+      <a
+        class="logo"
+        href="../index.html"
+        aria-label="Ke'Stone IT Support home"
+      >
+        <!-- Logo links back to the homepage -->
+
+        <span class="logo-mark" aria-hidden="true">K</span>
+        <!-- Decorative K logo -->
+
+        <span class="logo-text">
+          Ke'Stone <em>IT Support</em>
+        </span>
+        <!-- Company name -->
+
+      </a>
+
+
+      <!-- Mobile navigation button -->
+
+      <button
+        class="nav-toggle"
+        id="navToggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="primaryNav"
+        aria-label="Toggle navigation menu"
+      >
+        <!-- Opens and closes the mobile navigation -->
+
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <!-- Three bars create the hamburger icon -->
+
+      </button>
+
+
+      <!-- Main navigation -->
+
+      <nav class="primary-nav" id="primaryNav" aria-label="Primary">
+        <!-- Main website navigation -->
+
+        <ul>
+
+          <li>
+            <a href="../index.html" data-nav="home">Home</a>
+          </li>
+          <!-- Home page link -->
+
+          <li>
+            <a href="about.html" data-nav="about">About Us</a>
+          </li>
+          <!-- About page link -->
+
+          <li>
+            <a href="services.html" data-nav="services">Services</a>
+          </li>
+          <!-- Services page link -->
+
+          <li>
+            <a href="contact.html" data-nav="contact">Contact</a>
+          </li>
+          <!-- Contact page link -->
+
+          <li>
+            <a
+              class="btn btn-accent btn-sm"
+              href="enquiry.html"
+              data-nav="enquiry"
             >
-            <span class="nav-toggle-bar"></span>
-            <span class="nav-toggle-bar"></span>
-            <span class="nav-toggle-bar"></span>
-            </button>
+              Request Support
+            </a>
+            <!-- Current page call-to-action -->
 
-            <nav class="primary-nav" id="primaryNav" aria-label="Primary">
-            <ul>
-                <li><a href="../index.html" data-nav="home">Home</a></li>
-                <li><a href="about.html" data-nav="about">About Us</a></li>
-                <li><a href="services.html" data-nav="services">Services</a></li>
-                <li><a href="contact.html" data-nav="contact">Contact</a></li>
-                <li>
-                <a class="btn btn-accent btn-sm" href="enquiry.html" data-nav="enquiry"
-                    >Request Support</a
-                >
-                </li>
-            </ul>
-            </nav>
-        </div>
-    </header>
+          </li>
 
-    <main id="main">
-      <section class="hero">
-        <div class="container">
-          <p class="eyebrow">Request support</p>
-          <h1>Book a repair, setup or support session</h1>
-          <p class="lead">
-            Fill in the form below and we'll be in touch — usually within 24 hours — with next steps
-            and an honest estimate. Fields marked with * are required.
-          </p>
-        </div>
-      </section>
+        </ul>
+      </nav>
 
-      <section class="section section-grey">
-        <div class="container">
-          <!-- Booking form: validated client-side in assets/js/script.js -->
-          <form class="form-card" data-validate novalidate>
-            <div class="form-grid">
-              <div class="field">
-                <label for="fullName">Full Name*</label>
-                <input type="text" id="fullName" name="fullName" autocomplete="name" required />
-                <p class="error-msg" aria-live="polite"></p>
-              </div>
+    </div>
+  </header>
 
-              <div class="field">
-                <label for="email">Email*</label>
-                <input type="email" id="email" name="email" autocomplete="email" required />
-                <p class="error-msg" aria-live="polite"></p>
-              </div>
 
-              <div class="field">
-                <label for="phone">Phone*</label>
-                <input type="tel" id="phone" name="phone" autocomplete="tel" required />
-                <p class="error-msg" aria-live="polite"></p>
-              </div>
+  <!-- ================= MAIN CONTENT ================= -->
 
-              <div class="field">
-                <label for="issueType">Type of Issue*</label>
-                <select id="issueType" name="issueType" required>
-                  <option value="">Please select…</option>
-                  <option value="repair">PC / Laptop repair</option>
-                  <option value="network">Network setup</option>
-                  <option value="security">Cybersecurity</option>
-                  <option value="remote">Remote support</option>
-                  <option value="maintenance">Maintenance plan</option>
-                  <option value="other">Other</option>
-                </select>
-                <p class="error-msg" aria-live="polite"></p>
-              </div>
+  <main id="main">
+    <!-- Contains the main enquiry page content -->
 
-              <div class="field">
-                <label for="urgency">Urgency*</label>
-                <select id="urgency" name="urgency" required>
-                  <option value="">Please select…</option>
-                  <option value="urgent">Urgent — today if possible</option>
-                  <option value="week">Sometime this week</option>
-                  <option value="flexible">Flexible</option>
-                </select>
-                <p class="error-msg" aria-live="polite"></p>
-              </div>
 
-              <div class="field">
-                <label for="contactMethod">Preferred Contact Method</label>
-                <select id="contactMethod" name="contactMethod">
-                  <option value="email">Email</option>
-                  <option value="phone">Phone call</option>
-                  <option value="whatsapp">WhatsApp</option>
-                </select>
-                <p class="error-msg" aria-live="polite"></p>
-              </div>
+    <!-- ================= HERO SECTION ================= -->
 
-              <div class="field field-full">
-                <label for="details">Describe the Issue*</label>
-                <textarea
-                  id="details"
-                  name="details"
-                  placeholder="What device is affected, what happens, and when it started."
-                  required
-                ></textarea>
-                <p class="error-msg" aria-live="polite"></p>
-              </div>
+    <section class="hero">
+      <!-- Introduction to the enquiry page -->
+
+      <div class="container">
+
+        <p class="eyebrow">Request support</p>
+        <!-- Small section label -->
+
+        <h1>Book a repair, setup or support session</h1>
+        <!-- Main page heading -->
+
+        <p class="lead">
+          Fill in the form below and we'll be in touch — usually within 24 hours — with next steps
+          and an honest estimate. Fields marked with * are required.
+        </p>
+        <!-- Explains how the enquiry process works -->
+
+      </div>
+    </section>
+
+
+    <!-- ================= ENQUIRY FORM ================= -->
+
+    <section class="section section-grey">
+      <!-- Section containing the support form -->
+
+      <div class="container">
+
+        <!-- Booking form -->
+
+        <form class="form-card" data-validate novalidate>
+          <!--
+            Form used to collect customer support information.
+
+            data-validate allows JavaScript to validate the form.
+            novalidate disables the browser's default validation messages.
+          -->
+
+          <div class="form-grid">
+            <!-- Organizes form fields into a grid -->
+
+
+            <!-- Full name -->
+
+            <div class="field">
+
+              <label for="fullName">Full Name*</label>
+              <!-- Label for the name input -->
+
+              <input
+                type="text"
+                id="fullName"
+                name="fullName"
+                autocomplete="name"
+                required
+              />
+              <!-- Collects the user's full name -->
+
+              <p class="error-msg" aria-live="polite"></p>
+              <!-- Displays validation errors -->
+
             </div>
 
-            <p class="error-msg" data-form-summary aria-live="polite"></p>
 
-            <button class="btn btn-accent" type="submit">Send request</button>
-            <p class="form-note" style="margin-top: 1rem">
-              This is a demo site with no backend — your details are validated in the browser only
-              and are not stored or transmitted anywhere.
-            </p>
-          </form>
-        </div>
-      </section>
-    </main>
+            <!-- Email -->
 
-    
-    <footer class="site-footer">
-      <div class="container footer-grid">
-        <div>
-          <h2 class="footer-heading">Ke'Stone IT Support</h2>
-          <p class="footer-text">
-            Friendly, affordable IT support for small businesses and home users across Johannesburg.
+            <div class="field">
+
+              <label for="email">Email*</label>
+
+              <input
+                type="email"
+                id="email"
+                name="email"
+                autocomplete="email"
+                required
+              />
+              <!-- Collects the user's email address -->
+
+              <p class="error-msg" aria-live="polite"></p>
+              <!-- Displays validation errors -->
+
+            </div>
+
+
+            <!-- Phone number -->
+
+            <div class="field">
+
+              <label for="phone">Phone*</label>
+
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                autocomplete="tel"
+                required
+              />
+              <!-- Collects the user's phone number -->
+
+              <p class="error-msg" aria-live="polite"></p>
+              <!-- Displays validation errors -->
+
+            </div>
+
+
+            <!-- Issue type -->
+
+            <div class="field">
+
+              <label for="issueType">Type of Issue*</label>
+
+              <select id="issueType" name="issueType" required>
+                <!-- Allows the user to select the type of support needed -->
+
+                <option value="">Please select…</option>
+                <!-- Default empty option -->
+
+                <option value="repair">PC / Laptop repair</option>
+                <option value="network">Network setup</option>
+                <option value="security">Cybersecurity</option>
+                <option value="remote">Remote support</option>
+                <option value="maintenance">Maintenance plan</option>
+                <option value="other">Other</option>
+
+              </select>
+
+              <p class="error-msg" aria-live="polite"></p>
+              <!-- Displays validation errors -->
+
+            </div>
+
+
+            <!-- Urgency -->
+
+            <div class="field">
+
+              <label for="urgency">Urgency*</label>
+
+              <select id="urgency" name="urgency" required>
+                <!-- Allows the user to select how urgent the issue is -->
+
+                <option value="">Please select…</option>
+
+                <option value="urgent">
+                  Urgent — today if possible
+                </option>
+
+                <option value="week">
+                  Sometime this week
+                </option>
+
+                <option value="flexible">
+                  Flexible
+                </option>
+
+              </select>
+
+              <p class="error-msg" aria-live="polite"></p>
+              <!-- Displays validation errors -->
+
+            </div>
+
+
+            <!-- Preferred contact method -->
+
+            <div class="field">
+
+              <label for="contactMethod">
+                Preferred Contact Method
+              </label>
+
+              <select id="contactMethod" name="contactMethod">
+                <!-- Lets the user choose how they want to be contacted -->
+
+                <option value="email">Email</option>
+                <option value="phone">Phone call</option>
+                <option value="whatsapp">WhatsApp</option>
+
+              </select>
+
+              <p class="error-msg" aria-live="polite"></p>
+              <!-- Displays validation errors -->
+
+            </div>
+
+
+            <!-- Issue description -->
+
+            <div class="field field-full">
+
+              <label for="details">
+                Describe the Issue*
+              </label>
+
+              <textarea
+                id="details"
+                name="details"
+                placeholder="What device is affected, what happens, and when it started."
+                required
+              ></textarea>
+              <!-- Allows the user to describe their IT problem -->
+
+              <p class="error-msg" aria-live="polite"></p>
+              <!-- Displays validation errors -->
+
+            </div>
+
+          </div>
+
+
+          <!-- Form-wide error message -->
+
+          <p
+            class="error-msg"
+            data-form-summary
+            aria-live="polite"
+          ></p>
+          <!-- Displays a general form validation message -->
+
+
+          <!-- Submit button -->
+
+          <button class="btn btn-accent" type="submit">
+            Send request
+          </button>
+          <!-- Submits the support request form -->
+
+
+          <!-- Form disclaimer -->
+
+          <p class="form-note" style="margin-top: 1rem">
+            This is a demo site with no backend — your details are validated in the browser only
+            and are not stored or transmitted anywhere.
           </p>
-        </div>
+          <!-- Explains that this demo does not actually send or store information -->
 
-        <div>
-          <h2 class="footer-heading">Contact</h2>
-          <ul class="footer-list">
-            <li><a href="tel:+27110000000">+27 11 000 0000</a></li>
-            <li><a href="mailto:hello@kestone-it.co.za">hello@kestone-it.co.za</a></li>
-            <li>Mon–Fri: 08:00–17:30 · Sat: 09:00–13:00</li>
-          </ul>
-        </div>
+        </form>
 
-        <div>
-          <h2 class="footer-heading">Quick links</h2>
-          <ul class="footer-list">
-            <li><a href="services.html">Services</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="enquiry.html">Request Support</a></li>
-          </ul>
-        </div>
+      </div>
+    </section>
 
-        <div>
-          <h2 class="footer-heading">Follow us</h2>
-          <ul class="footer-list footer-social">
-            <li><a href="https://www.facebook.com/" rel="noopener">Facebook</a></li>
-            <li><a href="https://www.linkedin.com/" rel="noopener">LinkedIn</a></li>
-            <li><a href="https://wa.me/27110000000" rel="noopener">WhatsApp</a></li>
-          </ul>
-        </div>
+  </main>
+
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer class="site-footer">
+    <!-- Website footer -->
+
+    <div class="container footer-grid">
+      <!-- Organizes footer content into columns -->
+
+
+      <!-- Company information -->
+
+      <div>
+
+        <h2 class="footer-heading">
+          Ke'Stone IT Support
+        </h2>
+
+        <p class="footer-text">
+          Friendly, affordable IT support for small businesses and home users across Johannesburg.
+        </p>
+
       </div>
 
-      <div class="footer-bottom">
-        <p>&copy; <span data-year>2026</span> Ke'Stone IT Support. All rights reserved.</p>
-      </div>
-    </footer>
 
-    <script src="../assets/js/script.js"></script>
-  </body>
+      <!-- Contact information -->
+
+      <div>
+
+        <h2 class="footer-heading">Contact</h2>
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="tel:+27110000000">
+              +27 11 000 0000
+            </a>
+          </li>
+          <!-- Phone link -->
+
+          <li>
+            <a href="mailto:hello@kestone-it.co.za">
+              hello@kestone-it.co.za
+            </a>
+          </li>
+          <!-- Email link -->
+
+          <li>
+            Mon–Fri: 08:00–17:30 · Sat: 09:00–13:00
+          </li>
+          <!-- Business hours -->
+
+        </ul>
+
+      </div>
+
+
+      <!-- Quick links -->
+
+      <div>
+
+        <h2 class="footer-heading">Quick links</h2>
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="services.html">Services</a>
+          </li>
+
+          <li>
+            <a href="about.html">About Us</a>
+          </li>
+
+          <li>
+            <a href="enquiry.html">Request Support</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <!-- Social media links -->
+
+      <div>
+
+        <h2 class="footer-heading">Follow us</h2>
+
+        <ul class="footer-list footer-social">
+
+          <li>
+            <a
+              href="https://www.facebook.com/"
+              rel="noopener"
+            >
+              Facebook
+            </a>
+          </li>
+          <!-- Facebook link -->
+
+          <li>
+            <a
+              href="https://www.linkedin.com/"
+              rel="noopener"
+            >
+              LinkedIn
+            </a>
+          </li>
+          <!-- LinkedIn link -->
+
+          <li>
+            <a
+              href="https://wa.me/27110000000"
+              rel="noopener"
+            >
+              WhatsApp
+            </a>
+          </li>
+          <!-- WhatsApp link -->
+
+        </ul>
+
+      </div>
+
+    </div>
+
+
+    <!-- Copyright -->
+
+    <div class="footer-bottom">
+
+      <p>
+        &copy;
+        <span data-year>2026</span>
+        Ke'Stone IT Support. All rights reserved.
+      </p>
+      <!-- JavaScript can update the year automatically -->
+
+    </div>
+
+  </footer>
+
+
+  <!-- ================= JAVASCRIPT ================= -->
+
+  <script src="../assets/js/script.js"></script>
+  <!-- Loads JavaScript for form validation and other website features -->
+
+</body>
 </html>
+<!-- End of the HTML document -->
